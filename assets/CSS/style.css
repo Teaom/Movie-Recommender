@@ -1,0 +1,289 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+/* Map styling */
+#map-button {
+  background-color: rgb(128, 0, 0);
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 1;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+.section1 {
+  padding-top: 15px;
+}
+
+.section-search {
+  padding-top: 7%;
+}
+
+#map-modal-window {
+  border-radius: 6px;
+}
+
+/* Sidebar Styling */
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(96, 93, 93);
+  overflow-x: hidden;
+  padding-top: 25px;
+}
+
+footer {
+  width: 80%;
+  float: right;
+}
+
+footer p{
+  text-align: center;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f7f1f1;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: rgb(128, 0, 0);
+}
+
+.main {
+  margin-left: 160px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.input {
+  max-width: 65%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  background-color: #bfbebe;
+}
+
+#home{
+  color: black;
+}
+
+#myBtn {
+  background-color: rgb(96, 93, 93);
+  font-size: larger;
+  margin-top: 1.5%;
+  margin-left: 2%;
+  cursor: pointer;
+  border: 0;
+}
+
+.active {
+  background-color: rgb(159, 83, 83);
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #4a4949;
+  padding-left: 8px;
+}
+
+.img-fit {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.card {
+  border-radius: 30px;
+  margin-bottom: 120px;
+  width: 28vw;
+  height: 350px;
+  min-width: 201px;
+}
+
+#container1 {
+  display: flex;
+  padding-right: 40px;
+  justify-content: flex-end;
+  margin-left: 27vw;
+  margin-top: 100px;
+}
+
+#container2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 27vw;
+}
+
+#containerSearch {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 27vw;
+}
+
+.rowTitle {
+  padding-left: 25%;
+  width: 80%;
+  float: right;
+  display: flex;
+  position: relative;
+  /* left: 27vw; TODO */
+  height: 40px;
+  font-size: 1.8em;
+}
+
+#row1Title {
+  bottom: 5vh;
+}
+
+#row2Title {
+  bottom: 5vh;
+}
+
+#rowSearchTitle {
+  bottom: 2vh;
+}
+
+.column {
+  min-width: 225px;
+  max-width: 300px;
+}
+
+/* header CSS */
+
+nav {
+  width: 80%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-left: 500px;  TODO*/
+  /* padding-right: 50px; TODO*/
+  background-color: #4a4949;
+  color: #f7f1f1;
+  font-size: 25px;
+}
+
+.nav-links {
+  padding: 28px 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f7f1f1;
+  padding: 5px 0;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  background: rgb(128, 0, 0);
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+nav h3 {
+  padding-left: 15%;
+}
+
+/*Contact page*/
+
+.contact-info {
+  padding-top: 5%;
+  padding-left: 30%; 
+  
+} 
+
+.contact-name {
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .row-title1 {
+    text-align: center;
+    font-size: 1.6em;
+    width: 100%;
+  }
+
+  .row-title2 {
+    text-align: center;
+    font-size: 1.6em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  nav {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  nav {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1476px) {
+  .section1 {
+    padding-top: 15%;
+  }
+}
+
+@media screen and (max-width: 751px) {
+  /* TODO: sidebar position */
+}
+
+@media screen and (max-width: 591px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav h3 {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /* TODO: button-size  */
+}
